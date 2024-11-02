@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonia Musical - Escola de Música</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://cdn.pixabay.com/photo/2022/07/04/04/37/musician-7300353_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+
+        .teacher-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Harmonia Musical</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#professores">Professores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section text-white text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Desperte seu talento musical</h1>
+                    <p class="lead mb-4">Aprenda música com os melhores professores em um ambiente acolhedor e
+                        inspirador.</p>
+                    <a href="#contato" class="btn btn-primary btn-lg">Agende uma aula experimental</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="cursos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nossos Cursos</h2>
+            <div class="row g-4">
+                <!-- Curso 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 card-hover shadow-sm">
+                        <img src="https://cdn.pixabay.com/photo/2018/03/26/14/18/man-3262834_640.png"
+                            class="card-img-top" alt="Violão">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Violão</h3>
+                            <p class="card-text">Aprenda técnicas essenciais e avançadas de violão com professores
+                                experientes.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Aulas individuais</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Material didático</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Certificado</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#contato" class="btn btn-outline-primary w-100">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Curso 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 card-hover shadow-sm">
+                        <img src="https://cdn.pixabay.com/photo/2017/05/24/10/06/art-2340062_640.jpg"
+                            class="card-img-top" alt="Piano">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Piano</h3>
+                            <p class="card-text">Do básico ao avançado, descubra a magia do piano com aulas
+                                personalizadas.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Aulas individuais</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Material didático</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Certificado</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#contato" class="btn btn-outline-primary w-100">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Curso 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 card-hover shadow-sm">
+                        <img src="https://cdn.pixabay.com/photo/2020/02/06/13/39/boy-4824353_1280.png"
+                            class="card-img-top" alt="Canto">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Canto</h3>
+                            <p class="card-text">Desenvolva sua voz e técnica vocal com profissionais qualificados.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Aulas individuais</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Material didático</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Certificado</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#contato" class="btn btn-outline-primary w-100">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section id="professores" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Nossos Professores</h2>
+            <div class="row g-4">
+                <!-- Professor 1 -->
+                <div class="col-md-4">
+                    <div class="card text-center border-0 bg-transparent">
+                        <img src="https://cdn.pixabay.com/photo/2024/05/19/11/57/ai-generated-8772402_640.png"
+                            class="rounded-circle mx-auto teacher-img" alt="Professor 1">
+                        <div class="card-body">
+                            <h3 class="card-title h5">João Silva</h3>
+                            <p class="card-text text-muted">Professor de Violão</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-outline-dark btn-sm rounded-circle">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-dark btn-sm rounded-circle">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-dark btn-sm rounded-circle">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professor 2 -->
+                <div class="col-md-4">
+                    <div class="card text-center border-0 bg-transparent">
+                        <img src="https://cdn.pixabay.com/photo/2024/05/19/11/57/ai-generated-8772402_640.png"
+                            class="rounded-circle mx-auto teacher-img" alt="Professor 2">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Maria Santos</h3>
+                            <p class="card-text text-muted">Professora de Piano</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-outline-dark btn-sm rounded-circle">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-dark btn-sm rounded-circle">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-dark btn-sm rounded-circle">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professor 3 -->
+                <div class="col-md-4">
+                    <div class="card text-center border-0 bg-transparent">
+                        <img src="https://cdn.pixabay.com/photo/2024/05/19/11/57/ai-generated-8772402_640.png"
+                            class="rounded-circle mx-auto teacher-img" alt="Professor 3">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pedro Oliveira</h3>
+                            <p class="card-text text-muted">Professor de Canto</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-outline-dark btn-sm rounded-circle">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-dark btn-sm rounded-circle">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-dark btn-sm rounded-circle">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center mb-5">Entre em Contato</h2>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="nome" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe seu nome.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe um email válido.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor, escreva sua mensagem.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100" type="submit">Enviar mensagem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5>Harmonia Musical</h5>
+                    <p class="mb-0">Transformando vidas através da música desde 2010.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="bi bi-geo-alt-fill me-2"></i>Rua da Música, 123</li>
+                        <li><i class="bi bi-telephone-fill me-2"></i>(11) 99999-9999</li>
+                        <li><i class="bi bi-envelope-fill me-2"></i>contato@harmoniamusical.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-whatsapp fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Harmonia Musical. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Form Validation Script -->
+    <script>
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                }
+                )
+            })
+        })
+    </script>
+</body>
+
+</html>
